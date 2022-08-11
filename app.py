@@ -1,6 +1,5 @@
 #    ***  Django Web Application ***  
 # @Import all the required Modules Here.......
-from turtle import screensize
 from typing import Any, Dict
 from django.shortcuts import render
 from django.views.generic import TemplateView
@@ -21,8 +20,8 @@ BASE_DIR: path = Path(__file__).resolve().parent.parent
 SECRET_KEY: str = 'django-insecure-o%8(4ywbwpd4v5yaz%r#kvn2*z07b)ur-v#zbu#!($ime$&p15'
 # for production environment we set the debug value to true....
 DEBUG: bool = True
-ALLOWED_HOSTS: list = []
-HOST: str = "http://127.0.0.1:8000"
+HOST: str = "https://app-myapp.azurewebsites.net/"
+ALLOWED_HOSTS: list = [HOST]
 APP_NAME: str = __name__
 # Here are the installed applications which are used inside these projects.........
 INSTALLED_APPS: list[str] = [
