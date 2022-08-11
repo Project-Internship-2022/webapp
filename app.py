@@ -138,7 +138,7 @@ def main(request: WSGIRequest) -> HttpResponse:
         setEnviron()
         setResponseObject(HomePageBlock=True)
         return render(request, "IndexPage.html", responseAsJsonObject | {"main_template":"HomePage.html" } )
-    except ZeroDivisionError as e:
+    except:
         return HttpResponse("<h1>Application Configuration Failed </h1>")
 
 class HomePage(TemplateView):
